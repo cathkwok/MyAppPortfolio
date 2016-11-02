@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_home"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:minWidth="@dimen/home_button_min_width"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -11,7 +15,59 @@
     tools:context="com.udacity.cathkwok.myappportfolio.HomeActivity">
 
     <TextView
+        style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="@string/my_nanodegree_apps" />
+
+    <Button
+        android:id="@+id/popular_movies"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchApp"
+        android:layout_margin="@dimen/home_button_layout_margin"
+        android:text="@string/popular_movies" />
+
+    <Button
+        android:id="@+id/stock_hawk"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchApp"   android:layout_margin="@dimen/home_button_layout_margin"
+        android:text="@string/stock_hawk" />
+
+    <Button
+        android:id="@+id/build_it_bigger"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchApp"   android:layout_margin="@dimen/home_button_layout_margin"
+        android:text="@string/build_it_bigger" />
+
+    <Button
+        android:id="@+id/make_your_app_material"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   android:layout_margin="@dimen/home_button_layout_margin"
+        android:onClick="launchApp"
+        android:text="@string/make_your_app_material" />
+
+    <Button
+        android:id="@+id/go_ubiquitous"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   android:layout_margin="@dimen/home_button_layout_margin"
+        android:onClick="launchApp"
+        android:text="@string/go_ubiquitous" />
+
+    <Button
+        android:id="@+id/capstone"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   android:layout_margin="@dimen/home_button_layout_margin"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="launchApp"
+        android:text="@string/capstone" />
+</LinearLayout>
